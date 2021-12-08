@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:src="@drawable/find"/>
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/email_login_et"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="@string/university_email"
+     app:boxStrokeColor="@color/blue"
+     app:hintTextColor="@color/blue"
+     android:layout_margin="@dimen/_15sdp"
+     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:layout_width="match_parent"
+      android:inputType="textEmailAddress"
+      android:layout_height="wrap_content"
+      />
+
+ </com.google.android.material.textfield.TextInputLayout>
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/password_login_et"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="@string/password"
+     app:boxStrokeColor="@color/blue"
+     app:hintTextColor="@color/blue"
+     android:layout_marginStart="@dimen/_15sdp"
+     android:layout_marginEnd="@dimen/_15sdp"
+     android:layout_marginBottom="@dimen/_10sdp"
+     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:inputType="textPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+ </com.google.android.material.textfield.TextInputLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:weightSum="2">
+  <com.google.android.material.button.MaterialButton
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+
+     android:layout_margin="@dimen/_15sdp"
+      android:backgroundTint="@color/dark_blue"
+      android:text="@string/login"
+      android:textAllCaps="false"/>
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/login_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_margin="@dimen/_15sdp"
+      android:backgroundTint="@color/blue"
+      android:text="@string/register"
+      android:textAllCaps="false"/>
+ </LinearLayout>
+
+
+
+</LinearLayout>
