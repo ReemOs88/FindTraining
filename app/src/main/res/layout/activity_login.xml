@@ -56,13 +56,13 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-
+    android:id="@+id/btn_login"
      android:layout_margin="@dimen/_15sdp"
       android:backgroundTint="@color/dark_blue"
       android:text="@string/login"
       android:textAllCaps="false"/>
   <com.google.android.material.button.MaterialButton
-      android:id="@+id/login_btn"
+      android:id="@+id/register_btn"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_weight="1"
